@@ -1,0 +1,3 @@
+The go.mod file lists the specific versions of the dependencies that your project uses.
+
+Konsepnya sama aja kaya package.json

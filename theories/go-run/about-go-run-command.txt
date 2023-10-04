@@ -1,0 +1,5 @@
+Go run is an efficient command in that there are no artifacts needed in order to run your program.
+Go simply compiles the program into a binary to be ran DIRECTLY in memory.
+As long as your Go path and environment variables are defined correctly, you can call go run from anywhere in your system.
+
+Inget, itu bukan make intrepreter wkwk.

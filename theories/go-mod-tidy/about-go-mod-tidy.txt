@@ -1,0 +1,4 @@
+go mod tidy command will basically match the go.mod file with the dependencies required in the source files.
+
+- Download all the dependencies that are required in your source files and update go.mod file with that dependency.
+- Remove all dependencies from the go.mod file which are not required in the source files.

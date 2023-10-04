@@ -1,0 +1,21 @@
+Secara default, go throw error kalo lu buka multiple projects dalam 1 workspace.
+Itu rules workspace project go.
+
+Contoh:
+
+my-projects
+├── hello-world
+│   ├── go.mod
+│   └── hello.go
+└── variables
+    ├── go.mod
+    └── variables-etc.go
+
+Kalo lu buka folder my-projects di IDE, artinya lu buka 2 project dalam 1 workspace. Go (gopls) gasuka itu!
+Tapi, kalo lu mau supaya itu bisa dilakukan, pake command go work
+
+Jalanin command berikut di directory parent, dalam contoh diatas yaitu my-projects.
+
+1. go work init
+2. go work use <hello_world>
+3. go work use <variables>

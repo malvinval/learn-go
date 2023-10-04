@@ -1,0 +1,2 @@
+If you want to create an executable, you can use the go build command.
+Command: go build <source_file.go>
