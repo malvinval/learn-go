@@ -16,13 +16,15 @@
 
 Secara default, Go gamau buka multiple projects dalam 1 workspace. Misal:
 
-**my-projects**
-├── **hello-world**
+```bash
+my-projects
+├── hello-world
 │   ├── go.mod
 │   └── hello.go
-└── **variables**
+└── variables
     ├── go.mod
     └── variables-etc.go
+```
 
 Kalo directory my-projects dibuka di IDE, artinya 2 project dibuka dalam 1 workspace. Go (gopls) gasuka itu!
 
