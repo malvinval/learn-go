@@ -17,5 +17,5 @@ Tapi, kalo lu mau supaya itu bisa dilakukan, pake command go work
 Jalanin command berikut di directory parent, dalam contoh diatas yaitu my-projects.
 
 1. go work init
-2. go work use <hello_world>
-3. go work use <variables>
+2. go work use hello_world
+3. go work use variables

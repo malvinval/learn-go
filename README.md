@@ -32,5 +32,5 @@ Solusinya adalah command `go work`
 
 1. **`cd my-projects`**
 2. **`go work init`**
-3. **`go work use <hello_world>`**
-4. **`go work use <variables>`**
+3. **`go work use hello_world`**
+4. **`go work use variables`**
