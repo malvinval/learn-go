@@ -28,8 +28,8 @@ variable_name := 1
 Bahasa Go support *Type Inference*, sehingga programmer gaperlu nentuin tipe data secara manual ketika deklarasi variable. Contoh:
 
 ```go
-var z = 10 // type inference
-var x uint8 = 5; // type deduction
+var z = 10 // type inferred
+var x uint8 = 5; // type deducted
 ```
 
 ## Multiple declaration in one line
