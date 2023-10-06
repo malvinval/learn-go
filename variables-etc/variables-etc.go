@@ -55,6 +55,15 @@ func main() {
 	// using shorthand
 	height := 182.4
 
+	// Multiple declaration in one line
+	var a, b, c, d int = 1, 3, 5, 7
+
+	// If the type keyword is not specified, you can declare different types of variables in the same line
+	var e, f = 6, "Hello"
+	g, h := 7, "World!"
+
 	fmt.Println(name, "is", age, "years old with", bloodTypeS, "bloodtype.")
-	fmt.Printf("Height: %v centimeters", height)
+	fmt.Printf("Height: %v centimeters\n", height)
+	fmt.Println(a, b, c, d, e, f, g, h)
+
 }

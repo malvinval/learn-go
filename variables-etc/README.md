@@ -23,6 +23,40 @@ Anggep aja ini sama kaya keyword `auto` di C++.
 variable_name := 1
 ```
 
+## Type Inference
+
+Bahasa Go support *Type Inference*, sehingga programmer gaperlu nentuin tipe data secara manual ketika deklarasi variable. Contoh:
+
+```go
+var z = 10 // type inference
+var x uint8 = 5; // type deduction
+```
+
+## Multiple declaration in one line
+
+1. Deklarasi banyak variable dengan tipe yang sama
+
+```go
+var a, b, c, d uint8 = 1,2,3,4
+```
+
+2. Deklarasi banyak variable dengan tipe yang berbeda
+
+- Menggunakan keyword var, tanpa type.
+
+    Kalo pake cara ini, gaboleh nentuin type.
+
+    ```go
+    var a, b = "Go", 2
+    ```
+
+- Menggunakan shorthand
+
+    ```go
+    a, b := "Go", 12
+    ```
+
+
 ## int vs int32
 
 - **`int`**
