@@ -43,3 +43,18 @@ var numbers3 = [5]int8{1, 2, 3, 4, 5} // fully initialized
 ```
 
 Data dalam array yang **tidak** terinisialisasi, akan diisi dengan nilai **0** (asumsi tipe datanya adalah integer). Dengan begitu, jika array `numbers2` diprint akan menghasilkan output `[1, 2, 3, 0, 0]`, dan `numbers1` akan menghasilkan output `[0, 0, 0, 0, 0]`
+
+## Initialized only specific element
+
+Bahasa Go menyediakan fitur untuk programmer menginisialisasi data dalam array hanya pada index tertentu saja. Sisanya, akan diisi dengan nilai 0 (apabila bertipe integer). Contoh:
+
+```go
+var foods = [5]string{1: "Pork", 4: "Candy"} // init only index 1 and 4
+fmt.Printf("Foods: %v,%v,%v\n", foods[1], foods[0], foods[4])
+```
+
+Output program diatas adalah:
+
+```bash
+Foods: Pork,,Candy
+```

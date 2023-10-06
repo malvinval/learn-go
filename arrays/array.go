@@ -36,4 +36,12 @@ func main() {
 	fmt.Printf("%v\n", numbers1) // output: 0,0,0,0,0
 	fmt.Printf("%v\n", numbers2) // output: 1,2,3,0,0
 	fmt.Printf("%v\n", numbers3) // output: 1,2,3,4,5
+
+	/*
+		Initialized only specific element
+	*/
+
+	var foods = [5]string{1: "Pork", 4: "Candy"} // init only index 1 and 4
+
+	fmt.Printf("Foods: %v,%v,%v\n", foods[1], foods[0], foods[4])
 }
