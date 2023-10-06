@@ -1,6 +1,7 @@
 go 1.21.1
 
 use (
+	./constant
 	./hello-world
 	./variables-etc
 )
