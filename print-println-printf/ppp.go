@@ -13,5 +13,5 @@ func main() {
 	fmt.Println(a)
 
 	// printf
-	fmt.Printf("Data: %v, Type: %T", a, a)
+	fmt.Printf("Data: %v, Type: %T\n", a, a)
 }
