@@ -7,7 +7,7 @@
 Dibawah ini contoh deklarasi constant variable dengan menggunakan type:
 
 ```go
-    const PI float32  = 3.14 // deducted
+    const PI float32 = 3.14 // deducted
 ```
 
 Dibawah ini contoh deklarasi constant variable tanpa menggunakan type:
