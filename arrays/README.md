@@ -25,3 +25,21 @@ fmt.Println(students)
 fmt.Println(students[0])
 fmt.Println(students[1])
 ```
+
+## Array Initialization
+
+Ada 3 jenis inisialisasi nilai array:
+
+- not initialized
+- partially initialized
+- fully initialized
+
+Example:
+
+```go
+var numbers1 = [5]int8{}              // not initialized
+var numbers2 = [5]int8{1, 2, 3}       // partially initialized
+var numbers3 = [5]int8{1, 2, 3, 4, 5} // fully initialized
+```
+
+Data dalam array yang **tidak** terinisialisasi, akan diisi dengan nilai **0** (asumsi tipe datanya adalah integer). Dengan begitu, jika array `numbers2` diprint akan menghasilkan output `[1, 2, 3, 0, 0]`, dan `numbers1` akan menghasilkan output `[0, 0, 0, 0, 0]`

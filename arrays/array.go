@@ -20,4 +20,20 @@ func main() {
 
 	fmt.Println(students[0])
 	fmt.Println(students[1])
+
+	/*
+		Array initialization
+
+		- not initialized
+		- partially initialized
+		- fully initialized
+	*/
+
+	var numbers1 = [5]int8{}              // not initialized
+	var numbers2 = [5]int8{1, 2, 3}       // partially initialized
+	var numbers3 = [5]int8{1, 2, 3, 4, 5} // fully initialized
+
+	fmt.Printf("%v\n", numbers1) // output: 0,0,0,0,0
+	fmt.Printf("%v\n", numbers2) // output: 1,2,3,0,0
+	fmt.Printf("%v\n", numbers3) // output: 1,2,3,4,5
 }
