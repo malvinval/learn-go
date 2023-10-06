@@ -56,6 +56,15 @@ var a, b, c, d uint8 = 1,2,3,4
     a, b := "Go", 12
     ```
 
+## Multiple declaration in multiple line
+
+```go
+var (
+    a uint8 = 10
+    b string = "Gophers"
+    c bool = true
+)
+```
 
 ## int vs int32
 
