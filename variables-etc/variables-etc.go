@@ -52,5 +52,9 @@ var (
 )
 
 func main() {
-	fmt.Println(name, "is", age, "years old with", bloodTypeS, "bloodtype")
+	// using shorthand
+	height := 182.4
+
+	fmt.Println(name, "is", age, "years old with", bloodTypeS, "bloodtype.")
+	fmt.Printf("Height: %v centimeters", height)
 }
