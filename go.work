@@ -2,6 +2,7 @@ go 1.21.3
 
 use (
 	./arrays
+	./conditions
 	./constant
 	./hello-world
 	./print-println-printf
