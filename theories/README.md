@@ -29,6 +29,7 @@ Itu rules workspace project go.
 
 Contoh:
 
+```bash
 my-projects
 ├── hello-world
 │   ├── go.mod
@@ -36,6 +37,7 @@ my-projects
 └── variables
     ├── go.mod
     └── variables-etc.go
+```
 
 Kalo lu buka folder my-projects di IDE, artinya lu buka 2 project dalam 1 workspace. Go (gopls) gasuka itu!
 Tapi, kalo lu mau supaya itu bisa dilakukan, pake command go work
