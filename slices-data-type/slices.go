@@ -18,4 +18,7 @@ func main() {
 	fmt.Println(weekdays)
 	fmt.Println(codingDays)
 	fmt.Println(meetingDays)
+
+	// print ukuran datanya
+	fmt.Printf("%T", weekdays)
 }

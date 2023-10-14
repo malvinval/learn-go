@@ -80,3 +80,9 @@ Kesimpulannya, slice **`meetingDays`** memiliki pointer yang menunjuk ke data de
 
 ## Mengubah data
 Kalo data dalam Array diubah, maka data di Slice juga berubah. Begitu juga sebaliknya. Selalu inget bahwa **Slice adalah reference dari sebuah Array**.
+
+## **`len()`** & **`cap()`**
+
+`len()` merupakan function untuk tau length (ukuran) data dalam sebuah slice.
+
+`cap()` merupakan function untuk tau kapasitas maksimal data dalam sebuah slice.
