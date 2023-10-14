@@ -19,6 +19,10 @@ func main() {
 	fmt.Println(codingDays)
 	fmt.Println(meetingDays)
 
-	// print ukuran datanya
-	fmt.Printf("%T", weekdays)
+	// coba ganti data di slice meetingDays
+	meetingDays[0] = "Rabu"
+
+	// print data array dan slice
+	fmt.Println(days)
+	fmt.Println(meetingDays)
 }

@@ -79,7 +79,23 @@ capacity = 5
 Kesimpulannya, slice **`meetingDays`** memiliki pointer yang menunjuk ke data dengan index ke-2 (low), memiliki besar 2 data yaitu `[Wednesday Thursday]`, dan kapasitas maksimal 7 data.
 
 ## Mengubah data
-Kalo data dalam Array diubah, maka data di Slice juga berubah. Begitu juga sebaliknya. Selalu inget bahwa **Slice adalah reference dari sebuah Array**.
+Kalo data dalam Array diubah, maka data di Slice juga berubah. Begitu juga sebaliknya. Selalu inget bahwa **Slice adalah reference dari sebuah Array**. Contoh:
+
+```go
+// coba ganti data di slice meetingDays
+meetingDays[0] = "Rabu"
+
+// print data array dan slice
+fmt.Println(days)
+fmt.Println(meetingDays)
+```
+
+**output:**
+
+```bash
+[Monday Tuesday Rabu Thursday Friday Saturday Sunday]
+[Rabu Thursday]
+```
 
 ## **`len()`** & **`cap()`**
 
