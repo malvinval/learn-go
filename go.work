@@ -7,5 +7,6 @@ use (
 	./hello-world
 	./print-println-printf
 	./slices-data-type
+	./switch
 	./variables-etc
 )
