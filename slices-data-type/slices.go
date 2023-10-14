@@ -25,4 +25,15 @@ func main() {
 	// print data array dan slice
 	fmt.Println(days)
 	fmt.Println(meetingDays)
+
+	// append()
+	meetingDaysAppended := append(meetingDays, "Jumat")
+	fmt.Println(meetingDaysAppended)
+	fmt.Println(meetingDays)
+
+	// append() yang menghasilkan array baru
+	weekendAppended := append(weekend, "Sabit")
+	weekendAppended[1] = "Minggu"
+	fmt.Println(weekendAppended)
+	fmt.Println(weekend)
 }

@@ -97,8 +97,35 @@ fmt.Println(meetingDays)
 [Rabu Thursday]
 ```
 
-## **`len()`** & **`cap()`**
+## Function **`len()`** & **`cap()`**
 
 `len()` merupakan function untuk tau length (ukuran) data dalam sebuah slice.
 
 `cap()` merupakan function untuk tau kapasitas maksimal data dalam sebuah slice.
+
+## Function **`append()`**
+
+`append()` merupakan function yang berguna untuk menambahkan data kedalam sebuah Slice. Namun, apabila kapasitas Slice sudah penuh maka akan dibuatkan Array baru. Contoh:
+
+```go
+meetingDaysAppended := append(meetingDays, "Jumat")
+fmt.Println(meetingDaysAppended)
+```
+
+Operasi appending diatas ga akan menghasilkan array baru, karena slice `meetingDays()` masih punya sisa kapasitas.
+
+```go
+weekendAppended := append(weekend, "Sabit")
+weekendAppended[1] = "Minggu"
+fmt.Println(weekendAppended)
+fmt.Println(weekend)
+```
+
+**output:**
+
+```bash
+[Saturday Minggu Sabit]
+[Saturday Sunday]
+```
+
+Slice `weekend[1]` terlihat ga berubah jadi `"Minggu"` karena sebenernya yang diubah itu array baru, bukan Slice `weekend` asli.
