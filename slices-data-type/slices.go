@@ -36,4 +36,25 @@ func main() {
 	weekendAppended[1] = "Minggu"
 	fmt.Println(weekendAppended)
 	fmt.Println(weekend)
+
+	// make([]tipe_data, length, capacity)
+	sliceAku := make([]int, 5, 10)
+
+	sliceAku[1] = 24
+
+	fmt.Println(sliceAku) // [0,24,0,0,0]
+
+	// copy(dest, src)
+	sliceDia := make([]int, len(sliceAku), cap(sliceAku))
+
+	copy(sliceDia, sliceAku)
+
+	fmt.Println(sliceDia) // [0,24,0,0,0]
+
+	// deklarasi array dan slice itu beda!!
+	iniArray := [...]int{1, 2, 3} // ini array
+	iniSlice := []int{1, 2, 3}    // ini slice
+
+	fmt.Println(iniArray)
+	fmt.Println(iniSlice)
 }

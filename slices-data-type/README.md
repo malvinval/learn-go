@@ -129,3 +129,43 @@ fmt.Println(weekend)
 ```
 
 Slice `weekend[1]` terlihat ga berubah jadi `"Minggu"` karena sebenernya yang diubah itu array baru, bukan Slice `weekend` asli.
+
+## Function **`make()`**
+
+Kita juga bisa bikin sebuah Slice secara langsung tanpa deklarasi Array sebelumnya dengan menggunakan function `make()`
+
+```go
+// make([]tipe_data, length, capacity)
+sliceAku := make([]int, 5, 10)
+
+sliceAku[1] = 24
+
+fmt.Println(sliceAku)
+
+// copy(dest, src)
+sliceDia := make([]int, len(sliceAku), cap(sliceAku))
+
+copy(sliceDia, sliceAku)
+
+fmt.Println(sliceDia)
+```
+
+**output:**
+
+```bash
+[0 24 0 0 0]
+[0 24 0 0 0]
+```
+
+## Deklarasi Array vs Slice
+
+```go
+// deklarasi array dan slice itu beda!!
+iniArray := [...]int{1, 2, 3} // ini array
+iniSlice := []int{1, 2, 3}    // ini slice
+
+fmt.Println(iniArray)
+fmt.Println(iniSlice)
+```
+
+Liat aja tanda [...] dan [] nya.
