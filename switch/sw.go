@@ -13,4 +13,15 @@ func main() {
 	default:
 		fmt.Println("Unknown")
 	}
+
+	var grade uint8 = 89
+
+	switch {
+	case grade > 90:
+		fmt.Println("A+")
+	case grade > 60:
+		fmt.Println("A")
+	default:
+		fmt.Println("B")
+	}
 }
