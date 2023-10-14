@@ -5,6 +5,7 @@ use (
 	./conditions
 	./constant
 	./hello-world
+	./loops
 	./print-println-printf
 	./slices-data-type
 	./switch
