@@ -1,9 +1,10 @@
-go 1.21.2
+go 1.21.3
 
 use (
 	./arrays
 	./constant
 	./hello-world
 	./print-println-printf
+	./slices-data-type
 	./variables-etc
 )
