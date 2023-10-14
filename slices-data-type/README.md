@@ -132,7 +132,11 @@ Slice `weekend[1]` terlihat ga berubah jadi `"Minggu"` karena sebenernya yang di
 
 ## Function **`make()`**
 
-Kita juga bisa bikin sebuah Slice secara langsung tanpa deklarasi Array sebelumnya dengan menggunakan function `make()`
+Kita juga bisa bikin sebuah Slice secara langsung tanpa deklarasi Array sebelumnya dengan menggunakan function `make()`.
+
+- Parameter 1: []tipe_data
+- Parameter 2: length
+- Parameter 3: capacity
 
 ```go
 // make([]tipe_data, length, capacity)
