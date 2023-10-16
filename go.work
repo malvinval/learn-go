@@ -4,9 +4,12 @@ use (
 	./arrays
 	./conditions
 	./constant
+	./functions
 	./hello-world
 	./loops
 	./print-println-printf
+	./rewalk/looping
+	./rewalk/slice
 	./slices-data-type
 	./switch
 	./variables-etc
