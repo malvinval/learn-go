@@ -8,6 +8,12 @@ type Person struct {
 	married bool
 }
 
+// create a receiver function to make a method for struct Person
+
+func (p Person) sayHello() {
+	fmt.Println("Hello, my name is", p.name)
+}
+
 func main() {
 	// create an object struct from Person
 	var person1 Person
@@ -32,4 +38,8 @@ func main() {
 	fmt.Println(person2.name)
 	fmt.Println(person2.age)
 	fmt.Println(person2.married)
+
+	// call sayHello() method defined in struct Person
+	person1.sayHello()
+	person2.sayHello()
 }

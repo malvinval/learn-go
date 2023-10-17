@@ -47,3 +47,22 @@ fmt.Println(person2.name)
 fmt.Println(person2.age)
 fmt.Println(person2.married)
 ```
+
+## Struct Method
+
+Kita bisa membuat sebuah method dalam sebuah struct. Cukup deklarasi sebuah *receiver function*.
+
+Syntax: `func (p Person) namaMethod() {}`. Contoh:
+
+```go
+// create a receiver function to make a method for struct Person
+func (p Person) sayHello() {
+	fmt.Println("Hello, my name is", p.name)
+}
+
+// call the method
+person1.sayHello()
+person2.sayHello()
+```
+
+Nama variable `p` itu sebenernya bebas. Yang penting untuk dipahamin adalah, variable `p` itu gunanya untuk mengakses struct Person sesuai dengan object struct pemanggil method.
