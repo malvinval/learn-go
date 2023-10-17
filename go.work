@@ -11,6 +11,7 @@ use (
 	./rewalk/looping
 	./rewalk/slice
 	./slices-data-type
+	./struct
 	./switch
 	./variables-etc
 )
