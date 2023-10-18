@@ -8,6 +8,7 @@ use (
 	./functions
 	./hello-world
 	./loops
+	./multiple-return-function
 	./nil
 	./print-println-printf
 	./rewalk/looping
