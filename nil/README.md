@@ -43,3 +43,6 @@ if myChannel == nil {
     fmt.Println("Channel ini nil")
 }
 ```
+
+
+> Nil itu bukan sebuah tipe data, melainkan sebuah nilai. Variable yang memiliki `nil`, berarti memiliki nilai kosong.
