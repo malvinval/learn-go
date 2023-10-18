@@ -4,6 +4,7 @@ use (
 	./arrays
 	./conditions
 	./constant
+	./defer-panic-recover
 	./functions
 	./hello-world
 	./loops
