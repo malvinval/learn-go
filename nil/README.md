@@ -1,6 +1,6 @@
 ## Apa itu **`nil`**?
 
-Dalam bahasa pemrograman Go, `nil` adalah nilai yang digunakan untuk merepresentasikan ketiadaan atau ketidakadaan data. Tipe data `nil` hanya bisa digunakan untuk pointer, channel, func, interface, map, atau slice.
+Dalam bahasa pemrograman Go, `nil` adalah nilai yang digunakan untuk merepresentasikan ketiadaan atau ketidakadaan data. `nil` hanya bisa digunakan untuk pointer, channel, func, interface, map, atau slice.
 
 Berikut adalah contoh penggunaannya pada pointer, slice, map, dan channel data type.
 
