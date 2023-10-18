@@ -7,6 +7,7 @@ use (
 	./functions
 	./hello-world
 	./loops
+	./nil
 	./print-println-printf
 	./rewalk/looping
 	./rewalk/slice
