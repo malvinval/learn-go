@@ -71,4 +71,48 @@ Dengan kode diatas, statement `defer` tidak akan dieksekusi.
 
 ## Panic
 
-`panic()` digunakan untuk menampilkan *stack trace error* serta menghentikan flow goroutine. Semua statement yang ada setelah `panic()` tidak akan dieksekusi kecuali statement `defer()`
+`panic()` digunakan untuk menampilkan *stack trace error* serta menghentikan flow goroutine. Semua statement yang ada setelah `panic()` tidak akan dieksekusi kecuali statement `defer()`. Contoh:
+
+```go
+
+func sayFinished() {
+	fmt.Println("Finished")
+}
+
+// here we implement panic() usage
+func divide(a int, b int) (result int) {
+
+	defer sayFinished()
+
+	fmt.Println("Division function is working...")
+
+	if a < 1 || b < 1 {
+		// all statements after panic() will not be executed
+		panic("Number is unacceptable!")
+	}
+
+	result = a / b
+
+	return
+}
+
+func main() {
+	// trigger a zero division error
+	divide(10, 0)
+}
+```
+
+Output:
+
+```
+Division function is working...
+Finished
+Exit program.
+panic: Number is unacceptable!
+
+goroutine 1 [running]:
+main.divide(0xa, 0x0)
+...
+```
+
+Dari contoh diatas, kita bisa lihat bahwa statement `defer` tetap dieksekusi walaupun ada error terjadi di dalam block function `divide()`.
