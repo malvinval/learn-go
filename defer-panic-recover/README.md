@@ -68,3 +68,7 @@ func main() {
 ```
 
 Dengan kode diatas, statement `defer` tidak akan dieksekusi.
+
+## Panic
+
+`panic()` digunakan untuk menampilkan *stack trace error* serta menghentikan flow goroutine. Semua statement yang ada setelah `panic()` tidak akan dieksekusi kecuali statement `defer()`
