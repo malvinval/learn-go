@@ -13,5 +13,6 @@ use (
 	./slices-data-type
 	./struct
 	./switch
+	./type-declaration
 	./variables-etc
 )
