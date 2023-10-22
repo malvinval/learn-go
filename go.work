@@ -14,6 +14,7 @@ use (
 	./rewalk/looping
 	./rewalk/slice
 	./slices-data-type
+	./strings/convert-string-to-rune-slice
 	./struct
 	./switch
 	./type-declaration
